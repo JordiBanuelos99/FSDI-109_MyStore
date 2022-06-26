@@ -1,0 +1,14 @@
+.catalog h2 {
+    margin:35px;
+    text-transform: uppercase;
+    color: black;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@media (max-width: 600px){
+    .catalog h2 {
+        font-size: 25px;
+        margin: 25px;
+    }
+}

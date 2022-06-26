@@ -2,8 +2,18 @@ import "./navbar.css"
 
 function Navbar(){
     return (
-        <div className="navbar">
-            <h1>The Menu will be here!</h1>
+        <div className="navbar navbar-expand-lg sticky-top navbar-light bg-success text-white">
+            <ul className="nav">
+                <li className="nav-item">
+                    <a className="nav-link active" aria-current="page" href="#"><img src="https://i.ibb.co/2F4m6QM/Website-logo-nav.png" width="100px"/></a>
+                </li>
+                <li className="nav-item">
+                    <a className="nav-link" href="#">About</a>
+                </li>
+                <li className="nav-item">
+                    <a className="nav-link" href="#">Products</a>
+                </li>
+            </ul>
         </div>
     );
 }

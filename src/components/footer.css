@@ -1,5 +1,32 @@
 .footer {
     color: white;
-    background-color: black;
 }
 
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.right-side {
+    padding-top: 3.5rem;
+    text-align: right;
+}
+
+.left-side {
+    float:inline-start
+}
+
+@media (max-width: 600px){
+    .left-side img {
+        width: 100%;
+    }
+
+    .left-side p {
+        font-size: 12px;
+    }
+
+    .right-side {
+        padding-top: 1.5rem;
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,9 @@
+.quantityPicker {
+    display: flex;
+    justify-content: center;
+    margin:5px;
+}
+
+.quantityPicker label {
+    margin: 0 3px;
+}
