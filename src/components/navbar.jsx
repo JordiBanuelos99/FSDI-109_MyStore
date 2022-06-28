@@ -13,6 +13,9 @@ function Navbar(){
                 <li className="nav-item">
                     <a className="nav-link" href="#">Products</a>
                 </li>
+                <li className="nav-item">
+                    <a className="nav-link" href="#">My Cart</a>
+                </li>
             </ul>
         </div>
     );

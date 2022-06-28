@@ -1,14 +1,15 @@
 import "./product.css";
 import QuantityPicker from "./quantityPicker";
 
-const Product = () => {
+const Product = (props) => {
+    console.log(props);
     return(
         <div className="product">
-            <img src="https://www.greenqueen.com.hk/wp-content/uploads/2019/08/79DDB337-9104-4282-A9E7-48846087A304.jpeg" alt="" />
-                <h5>My Product</h5>
+            <img src={"/img/" + props.data.image} alt="" />
+                <h5>{props.data.title}</h5>
                 <QuantityPicker></QuantityPicker>
-                <label>Price: $20.00</label>
-                <label>Total: $30.00</label>
+                <label>Price: ${props.data.price.toFixed(2)}</label>
+                <label>Total: ${}</label>
             <button className="btn btn-success rounded-pill">Add to Cart</button>
         </div>
     );

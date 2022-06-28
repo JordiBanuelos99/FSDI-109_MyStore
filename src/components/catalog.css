@@ -6,6 +6,11 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.products.container {
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
 @media (max-width: 600px){
     .catalog h2 {
         font-size: 25px;

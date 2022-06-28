@@ -9,7 +9,10 @@
 }
 
 .product img {
-    width: 300px;
+    min-width: 290px;
+    max-width: 290px;
+    min-height: 240px;
+    max-height: 240px;
 }
 
 .product label {
