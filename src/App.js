@@ -3,6 +3,7 @@ import "./App.css";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 import Catalog from "./components/catalog";
+import About from "./components/about";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
         </div>
       </div>
       <Catalog></Catalog>
-
+      <About></About>
       <Footer></Footer>
     </div>
   );

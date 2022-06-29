@@ -1,4 +1,5 @@
-import "./navbar.css"
+import "./navbar.css";
+import Footer from "./about";
 
 function Navbar(){
     return (
@@ -8,7 +9,7 @@ function Navbar(){
                     <a className="nav-link active" aria-current="page" href="#"><img src="https://i.ibb.co/2F4m6QM/Website-logo-nav.png" width="100px"/></a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="#">About</a>
+                    <a className="nav-link" href="#about.jsx">About</a>
                 </li>
                 <li className="nav-item">
                     <a className="nav-link" href="#">Products</a>
