@@ -1,21 +1,22 @@
 import "./navbar.css";
-import Footer from "./about";
+import link, { Link } from "react-router-dom";
 
 function Navbar(){
     return (
         <div className="navbar navbar-expand-lg sticky-top navbar-light bg-success text-white">
             <ul className="nav">
                 <li className="nav-item">
-                    <a className="nav-link active" aria-current="page" href="#"><img src="https://i.ibb.co/2F4m6QM/Website-logo-nav.png" width="100px"/></a>
+                    <Link className="nav-link active" aria-current="page" to="/home"><img src="https://i.ibb.co/2F4m6QM/Website-logo-nav.png" width="100px"/>
+                    </Link>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="#about.jsx">About</a>
+                    <Link className="nav-link" to="/about">About</Link>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="#">Products</a>
+                    <Link className="nav-link" to="/catalog">Products</Link>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="#">My Cart</a>
+                    <Link className="nav-link" to="/mycart">My Cart</Link>
                 </li>
             </ul>
         </div>

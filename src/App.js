@@ -1,24 +1,28 @@
 import logo from "./logo.svg";
 import "./App.css";
 import Navbar from "./components/navbar";
+import Home from "./components/home";
 import Footer from "./components/footer";
 import Catalog from "./components/catalog";
 import About from "./components/about";
+import MyCart from "./components/mycart";
 import "bootstrap/dist/css/bootstrap.min.css";
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <Navbar></Navbar>
-      <div className="organic-header">
-        <div className="container header-titles">
-          <h5>Welcome to</h5>
-          <h1>The Organic Store</h1>
-        </div>
-      </div>
-      <Catalog></Catalog>
-      <About></About>
-      <Footer></Footer>
+      <BrowserRouter>
+        <Navbar></Navbar>
+        <Routes>
+          <Route path="/home" element={<Home />}></Route>
+          <Route path="/about" element={<About />}></Route>
+          <Route path="/catalog" element={<Catalog />}></Route>
+          <Route path="/mycart" element={<MyCart></MyCart>}></Route>
+        </Routes>
+        <Footer></Footer>
+      </BrowserRouter>
     </div>
   );
 }
