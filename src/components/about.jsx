@@ -13,7 +13,7 @@ const About = () => {
             <h1>About this website</h1>
             <h3>Jordi Bañuelos</h3>
             {visible ? <h4>Banuelosmendez99@gmail.com</h4> : "Click on the button below"}
-            <button onClick={changeVisibility}>Show / Hide Information</button>
+            <button onClick={changeVisibility} className="btn btn-primary">Show / Hide Information</button>
             <br />
             <br />
             <br />

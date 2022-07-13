@@ -48,3 +48,13 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  margin-bottom: 160px;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+  padding-bottom:160px;
+}

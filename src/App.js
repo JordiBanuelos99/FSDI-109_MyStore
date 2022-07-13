@@ -6,6 +6,7 @@ import Footer from "./components/footer";
 import Catalog from "./components/catalog";
 import About from "./components/about";
 import MyCart from "./components/mycart";
+import Admin from "./components/admin";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -20,6 +21,7 @@ function App() {
           <Route path="/about" element={<About />}></Route>
           <Route path="/catalog" element={<Catalog />}></Route>
           <Route path="/mycart" element={<MyCart></MyCart>}></Route>
+          <Route path="/admin" element={<Admin></Admin>}></Route>
         </Routes>
         <Footer></Footer>
       </BrowserRouter>
