@@ -15,14 +15,16 @@ const Catalog = () => {
         loadCatalog();
     },[])
     return(
-        <div className="catalog container">
+        <div className="catalog">
             <h2>This is our amazing catalog</h2>
             <h3>We have {products.length} products!</h3>
+            <div className="products-container">
             {
                 products.map((prod)=>(
                     <Product key={prod.id} data={prod}></Product>
                 ))
             }
+            </div> 
         </div>
     );
 }
