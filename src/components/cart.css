@@ -1,0 +1,36 @@
+.cart-page {
+    background-color: white;
+    min-height: 800px;
+}
+
+.cart-page .parent {
+    display: flex;
+}
+
+.cart-page .list {
+    flex: 3;
+}
+
+.cart-page .info {
+    flex: 1;
+}
+
+.cart-header {
+    background-image: url("/img/header4.jpg");
+    background-size: cover;
+    height: 60vh;
+    background-position:center;
+    color: white;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.cart-header h2 {
+    color:white;
+    margin: 0;
+    padding: 10rem 2rem 0 2rem;
+    text-shadow: 2px 2px black;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+}

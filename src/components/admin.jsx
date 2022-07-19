@@ -61,11 +61,13 @@ const Admin = () => {
 
     return (
         <div className="admin-page">
-            <h1>Store administration</h1>
+            <div className="admin-header">
+                <h1>Store administration</h1>
+            </div>
             <div className="parent">
                 <section className="products">
-                    <h3>Product codes</h3>
                     <div className="form">
+                        <h3>Product codes</h3>
                         <div className="my-control">
                             <label>Title</label>
                             <input name="title" onChange={HandleProductChange} type="text"/>
@@ -93,9 +95,8 @@ const Admin = () => {
                     </div>
                 </section>
                 <section className="coupons">
-                    <h3>Coupon codes</h3>
-
                     <div className="form">
+                        <h3>Coupon codes</h3>
                         <div className="my-control">
                             <label>Code</label>
                             <input name="code" onChange={HandleCouponChange} type="text"/>

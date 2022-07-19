@@ -17,9 +17,14 @@ const Product = (props) => {
     }
 
     const handleAdd = () => {
-        console.log("Add button pressed");
-        globalAddProd(props.data); //call the global function
+        /* Should be a copy of props.data */
+        let prod4Cart = {...props.data, quantity: quantity};
+        prod4Cart.quantity = quantity;
+
+        globalAddProd(prod4Cart); //call the global function
     }
+
+
     return(
         <div className="product">
             <img src={"/img/" + props.data.image} alt="" />

@@ -14,10 +14,12 @@ const Catalog = () => {
     useEffect(()=>{
         loadCatalog();
     },[])
-    return(
+    return (
         <div className="catalog">
-            <h2>This is our amazing catalog</h2>
-            <h3>We have {products.length} products!</h3>
+            <div className='catalog-header'>
+                <h2>This is our amazing catalog</h2>
+                <h3>We have {products.length} products!</h3>
+            </div>
             <div className="products-container">
             {
                 products.map((prod)=>(

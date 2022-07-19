@@ -10,6 +10,21 @@ section.coupons {
     flex: 2;
 }
 
+.parent h3 {
+    font-weight: bold;
+}
+
+.form {
+    border: 1px solid black;
+    margin: 40px;
+    height: 25rem;
+    border-radius: 5px;
+    padding-top: 40px;
+}
+
+.products h3 {
+    padding-bottom: 5px;
+}
 
 .my-control {
     display: block;
@@ -26,4 +41,22 @@ section.coupons {
     display: inline-block;
     margin-left: 5px;
     padding: 5px;
+}
+
+.admin-header {
+    background-image: url("/img/header3.jpg");
+    background-size: cover;
+    height: 60vh;
+    background-position:center;
+    text-align: left;
+}
+
+.admin-header h1 {
+    color:white;
+    margin: 0;
+    padding: 10rem 2rem 0 2rem;
+    text-shadow: 2px 2px black;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
 }
