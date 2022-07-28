@@ -1,5 +1,6 @@
 import "./admin.css";
 import { useState } from "react";
+import DataService from "../services/dataService";
 
 const Admin = () => {
     const [coupon, setCoupon] = useState({});
@@ -46,6 +47,8 @@ const Admin = () => {
         console.log(copy);
 
         // todo: save prod o server
+        let service = new DataService();
+        service.saveProduct(copy);
 
         // save prod on state array
         let copyAllProds = [...allProducts];

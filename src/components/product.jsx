@@ -22,19 +22,18 @@ const Product = (props) => {
         prod4Cart.quantity = quantity;
 
         globalAddProd(prod4Cart); //call the global function
-    }
-
+    };
 
     return(
         <div className="product">
             <img src={"/img/" + props.data.image} alt="" />
                 <h5>{props.data.title}</h5>
-                <label>Price: ${props.data.price.toFixed(2)}</label>
+                <label>Price: ${(+props.data.price).toFixed(2)}</label>
                 <label>Total: ${getTotal()}</label>
                 <QuantityPicker onChange={quantityChange}></QuantityPicker>
             <button onClick={handleAdd} className="btn btn-success rounded-pill">Add to Cart</button>
         </div>
     );
-}
+};
 
 export default Product;
